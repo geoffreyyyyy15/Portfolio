@@ -63,3 +63,15 @@ section {
         opacity: 0;
     }
 }
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.bounce-icon {
+    animation: bounce 0.7s infinite;
+}
