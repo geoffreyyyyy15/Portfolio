@@ -24,3 +24,42 @@ section {
     transition: all 1s;
     transform: translateX(0);
 }
+
+.button-circle {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.button-circle::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    background-color: blue;
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.button-circle:hover::after {
+    opacity: 1;
+    animation: circle-animation 1s linear infinite;
+}
+
+@keyframes circle-animation {
+    0% {
+        transform: translate(-50%, -50%) scale(0);
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0;
+    }
+}
