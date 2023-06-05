@@ -10,16 +10,19 @@
     <script src="app.js" defer></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css"  rel="stylesheet" />
 </head>
-<body class="bg-gradient-to-b from-gray-900 to-gray-800">
-    <div class="text-center mt-5 relative">
-      <button class="text-white  font-medium rounded-lg text-sm px-5 py-2.5 mr-2  button-circle" type="button" data-drawer-target="drawer-navigation" data-drawer-show="drawer-navigation" aria-controls="drawer-navigation">
-         Jump into
-     </button>
+<body class="bg-gradient-to-b from-gray-900 to-gray-700">
+   <div class="mt-0 op-0 left-0 right-0 text-center mt-5">
+      <div class="mr-[100px]">
+         <button class="button-circle fixed z-10 underline decoration-transparent hover:underline-offset-[10px] hover:decoration-white  text-white font-medium rounded-lg text-sm px-5 py-2.5 mr-2 duration-700  " type="button" data-drawer-target="drawer-navigation" data-drawer-show="drawer-navigation" aria-controls="drawer-navigation">
+            Jump into
+         </button>
+      </div>
         <div class="flex flex-col justify-center items-center text-center p-5 m-2">
             <div class="">
-                <img src="resources/profile.jpg" alt="profile" class="h-80 w-auto rounded-full" />
+                <img src="resources/profile.jpg" alt="profile" class="h-80 w-auto mt-5 rounded-full" />
             </div>
             <div class="flex flex-col lg:w-[1000px] mt-20">
+               <h1 class="text-4xl mb-10 transition-all hover:scale-110 hover:-translate-y-1 hover:text-white drop-shadow-2xl"><span class="hover:text-gray-300 transition-all duration-500">Geoffrey</span><span class="hover:text-gray-300 transition-all duration-500"> Bagabaldo</span></h1>
                 <h2 class="text-xl">
                     Dedicated Full Stack Programmer with expertise in front-end and back-end development. Passionate about crafting efficient solutions and continuously learning.
                     Effective communicator and team player committed to delivering user-friendly applications.
@@ -36,49 +39,59 @@
       <div class="mb-[300px]">
 
       </div>
-        <section class="hide" id="tech">
+        <section class="hide " id="tech">
          <h1 class="text-4xl mb-20">Technology</h1>
-         <div class="p-2 mb-20 mt-20 right-0 top-0">
+         <div class="p-2 mb-20 mt-20 right-0 top-0 transition-all hover:scale-110 hover:text-gray-300" >
             <h1 class="text-3xl">Programming</h1>
             <hr class="bg-gray-700 mt-10 ">
          </div>
-            <div class="sm:ml-2 lg:ml-2">
-              <div class="grid lg:grid-cols-3 md:gap-5 md:grid-cols-2 xl:grid-cols-3 xl:gap-4 max">
-                  <div class="bg-gray-900 p-5 m-2 rounded-lg w-48 flex justify-center"> 
+            <div class="logos sm:ml-2 lg:ml-2">
+              <div class="grid lg:grid-cols-2 md:gap-5 md:grid-cols-2 xl:grid-cols-2 xl:gap-4 max">
+               <div class="logo hide">
+                  <div class="transition-all bg-gray-900 p-5 m-2 rounded-lg w-48 flex justify-center border border-gray-900 hover:border-blue-900 "> 
                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg" alt="programming" class="h-48 w-48"/>
                   </div>
-                  <div class="bg-gray-900 p-5 m-2 rounded-lg w-48">
-                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="programming" class="h-48 w-48" />
                   </div>
-                  <div class="bg-gray-900 p-5 m-2 rounded-lg w-48">
-                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="programming" class="h-48 w-48" />
+
+                  <div class="logo hide">
+                     <div class="transition-all bg-gray-900 p-5 m-2 rounded-lg w-48 border border-gray-900 hover:border-yellow-900 ">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="programming" class="h-48 w-48" />
+                     </div>
                   </div>
               </div>
             </div>
-            <section class="hide" id="tech">
-            <div class="p-2 mb-20 mt-20 right-0 top-0">
+            <section class="" id="tech">
+            <div class="hide p-2 mb-20 mt-20 right-0 top-0 transition-all hover:scale-110 hover:text-gray-300">
                <h1 class="text-3xl">Frameworks</h1>
                <hr class="bg-gray-700 mt-10 ">
             </div>
             <div class="sm:ml-2 lg:ml-2">
-              <div class="grid lg:grid-cols-3 md:gap-5 md:grid-cols-2 xl:grid-cols-4 xl:gap-4 max">
-                  <div class="bg-gray-900 p-5 m-2 rounded-lg w-48 flex justify-center"> 
-                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg" alt="programming" class="h-48 w-48"/>
+                  <div class="logos grid lg:grid-cols-4 md:gap-5 md:grid-cols-2 xl:grid-cols-4 xl:gap-4 max">
+                     <div class="logo hide">
+                        <div class="transition-all bg-gray-900 p-5 m-2 rounded-lg w-48 flex justify-center border border-gray-900 hover:border-orange-900"> 
+                           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg" alt="programming" class="h-48 w-48"/>
+                        </div>
+                     </div>
+                     <div class="logo hide">
+                     <div class="bg-gray-900 p-5 m-2 rounded-lg w-48 border border-gray-900 hover:border-pink-900 transition-all">
+                        <img src="resources/livewire.png" alt="livewire" class="h-48 w-96" />
+                     </div>
+                     </div>
+                     <div class="logo hide">
+                     <div class=" bg-gray-900 p-5 m-2 rounded-lg w-48 border border-gray-900 hover:border-blue-300 transition-all">
+                        <img src="resources/alpine.png" alt="alpine" class="h-48 w-48" />
+                     </div>
+                     </div>
+                     <div class="logo hide">
+                     <div class=" bg-gray-900 p-5 m-2 rounded-lg w-48 border border-gray-900 hover:border-green-700 transition-all">     
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" alt="taiwind" class="h-48 w-48" />
+                     </div>
+                     </div>
                   </div>
-                  <div class="bg-gray-900 p-5 m-2 rounded-lg w-48">
-                     <img src="resources/livewire.png" alt="livewire" class="h-48 w-96" />
-                  </div>
-                  <div class="bg-gray-900 p-5 m-2 rounded-lg w-48">
-                     <img src="resources/alpine.png" alt="alpine" class="h-48 w-48" />
-                  </div>
-                  <div class="bg-gray-900 p-5 m-2 rounded-lg w-48">     
-                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" alt="alpine" class="h-48 w-48" />
-                  </div>
-              </div>
-            </div>
-        </section>
+               </div>
+            </section>
         <section class="hide">
-         <div class="p-2 mb-20 right-0 top-0">
+         <div class="p-2 mb-20 right-0 top-0 transition-all hover:scale-110 hover:text-gray-300">
             <h1 class="text-3xl">Projects</h1>
             <hr class="bg-gray-700 mt-10 ">
          </div>
