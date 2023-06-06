@@ -9,8 +9,26 @@
     <link rel="stylesheet" href="style.css">
     <script src="app.js" defer></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css"  rel="stylesheet" />
+    <script>
+      tailwind.config = {
+        theme: {
+         screens: {
+            'xs': '300px',
+            'sm': '640px',
+            'md': '768px',
+            'lg': '1024px',
+            'xl': '1280px',
+          },
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            }
+          }
+        }
+      }
+    </script>
 </head>
-<body class="bg-gradient-to-b from-gray-900 to-gray-700">
+<body class="bg-gradient-to-b from-gray-900 to-gray-700 min-w-xs">
    <div class="mt-0 op-0 left-0 right-0 text-center mt-5">
       <div class="mr-[100px]">
          <button class="button-circle fixed z-10 underline decoration-transparent hover:underline-offset-[10px] hover:decoration-white  text-white font-medium rounded-lg text-sm px-5 py-2.5 mr-2 duration-700  " type="button" data-drawer-target="drawer-navigation" data-drawer-show="drawer-navigation" aria-controls="drawer-navigation">
@@ -44,6 +62,31 @@
            <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
          </svg>
          <h1 class="text-4xl mb-20">Education</h1>
+         <div class="grid md:grid-cols-3 gap-4 items-center p-2 m-2">
+            <div class="">
+               <div class="block max-w-sm bg-gray-800 rounded-lg hover:bg-gray-500 border border-gray-600">
+                  <div class="max-w-md">
+                     <img src="resources/jocelyn.jpg" alt="school" class="w-58 h-40 rounded-full sm:ml-[110px] xs:ml-[110px] lg:ml-[100px] mt-5 md:ml-[30px]">
+                     <h1 class="text-white text-lg mb-2 p-5 tracking-tight font-bold">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias aut aspernatur ab vero distinctio. Doloremque.</h1>
+                     <p class="p-2 m-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, dolor suscipit optio eius rerum necessitatibus.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="block max-w-sm bg-gray-800 rounded-lg hover:bg-gray-500 border border-gray-600">
+               <div class="max-w-md">
+                  <img src="resources/sti.png" alt="school" class="w-58 h-40 rounded-full sm:ml-[110px] xs:ml-[110px] lg:ml-[100px] mt-5 md:ml-[30px]">
+                  <h1 class="text-white text-lg mb-2 p-5 tracking-tight font-bold">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias aut aspernatur ab vero distinctio. Doloremque.</h1>
+                  <p class="p-2 m-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, dolor suscipit optio eius rerum necessitatibus.</p>
+               </div>
+            </div>
+            <div class="block max-w-sm bg-gray-800 rounded-lg hover:bg-gray-500 border border-gray-600">
+               <div class="max-w-md">
+                  <img src="resources/adamson.jpg" alt="school" class="w-58 h-40 rounded-full sm:ml-[110px] xs:ml-[110px] lg:ml-[100px] mt-5 md:ml-[30px]">
+                  <h1 class="text-white text-lg mb-2 p-5 tracking-tight font-bold">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias aut aspernatur ab vero distinctio. Doloremque.</h1>
+                  <p class="p-2 m-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, dolor suscipit optio eius rerum necessitatibus.</p>
+               </div>
+            </div>
+         </div>
        </section>
        
         <section class="hide " id="tech">
@@ -84,22 +127,22 @@
             <div class="sm:ml-2 lg:ml-2">
                   <div class="logos grid lg:grid-cols-4 md:gap-5 md:grid-cols-2 xl:grid-cols-4 xl:gap-4 max">
                      <div class="logo hide">
-                        <div class="transition-all bg-gray-900 p-5 m-2 rounded-lg w-48 flex justify-center border border-gray-900 hover:border-orange-900"> 
+                        <div class="transition-all bg-gray-900 p-5 m-2 rounded-lg w-[230px] flex justify-center border border-gray-900 hover:border-orange-900"> 
                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg" alt="programming" class="h-48 w-48"/>
                         </div>
                      </div>
                      <div class="logo hide">
-                     <div class="bg-gray-900 p-5 m-2 rounded-lg w-48 border border-gray-900 hover:border-pink-900 transition-all">
-                        <img src="resources/livewire.png" alt="livewire" class="h-48 w-96" />
+                     <div class="bg-gray-900 p-5 m-2 rounded-lg w-[230px] border border-gray-900 hover:border-pink-900 transition-all">
+                        <img src="resources/livewire.png" alt="livewire" class="h-48 w-auto" />
                      </div>
                      </div>
                      <div class="logo hide">
-                     <div class=" bg-gray-900 p-5 m-2 rounded-lg w-48 border border-gray-900 hover:border-blue-300 transition-all">
-                        <img src="resources/alpine.png" alt="alpine" class="h-48 w-48" />
+                     <div class=" bg-gray-900 p-5 m-2 rounded-lg w-[230px] border border-gray-900 hover:border-blue-300 transition-all">
+                        <img src="resources/alpine.png" alt="alpine" class="h-48 w-[230px]" />
                      </div>
                      </div>
                      <div class="logo hide">
-                     <div class=" bg-gray-900 p-5 m-2 rounded-lg w-48 border border-gray-900 hover:border-green-700 transition-all">     
+                     <div class=" bg-gray-900 p-5 m-2 rounded-lg w-[230px] border border-gray-900 hover:border-green-700 transition-all">     
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" alt="taiwind" class="h-48 w-48" />
                      </div>
                      </div>
