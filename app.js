@@ -10,3 +10,16 @@ const observer = new IntersectionObserver((entries) => {
 })
 const hiddenElements = document.querySelectorAll('.hide');
 hiddenElements.forEach((el) => observer.observe(el)); 
+
+const showGrid = document.querySelector('#show');
+
+const hidden = document.querySelector('.hiddenGrid');
+
+showGrid.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    hidden.classList.remove('hiddenGrid');
+    showGrid.classList.add('hide');
+    hidden.classList.add('show');
+    
+})
