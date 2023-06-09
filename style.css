@@ -23,10 +23,19 @@ section {
     transform: translateX(-100%);
     transition: all 1s;
 }
+
+.hidden {
+    transition: all;
+}
+
 .show {
     opacity: 1;
     transition: all 1s;
     transform: translateX(0);
+}
+
+.hiddenGrid{
+    visibility: hidden;
 }
 
 .button-circle {
